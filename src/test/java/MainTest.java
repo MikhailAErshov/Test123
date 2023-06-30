@@ -10,11 +10,17 @@ import static com.codeborne.selenide.Selenide.*;
 public class MainTest extends WebTest {
 
     GooglePage googlePage = new GooglePage();
+    AptekaMainPage aptekaMainPage = new AptekaMainPage();
     @Test
     public void testLogin() {
         open("https://aptekaeconom.com/");
         Selenide.webdriver().driver().getWebDriver().manage().addCookie(new Cookie("current_region", "103006"));
         refresh();
+
+        aptekaMainPage.tabCatalogue.shouldBe(Condition.visible);
+        aptekaMainPage.tabCatalogue.hover();
+
+
 
 //        googlePage.setSearch();
     }

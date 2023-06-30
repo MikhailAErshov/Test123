@@ -11,8 +11,8 @@ public class MainTest extends WebTest {
     GooglePage googlePage = new GooglePage();
     @Test
     public void testLogin() {
-        open("https://www.google.ru");
+        open("https://aptekaeconom.com/");
 
-        googlePage.setSearch();
+//        googlePage.setSearch();
     }
 }

@@ -19,6 +19,7 @@ public class MainTest extends WebTest {
 
         aptekaMainPage.tabCatalogue.should(Condition.visible, Duration.ofSeconds(100));
         aptekaMainPage.tabCatalogue.hover();
+        aptekaMainPage.tabCatalogue.click();
 
 
 

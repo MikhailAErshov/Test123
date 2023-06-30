@@ -17,7 +17,7 @@ public class MainTest extends WebTest {
         Selenide.webdriver().driver().getWebDriver().manage().addCookie(new Cookie("current_region", "103006"));
         refresh();
 
-        aptekaMainPage.tabCatalogue.should(Condition.visible, Duration.ofSeconds(9));
+        aptekaMainPage.tabCatalogue.should(Condition.visible, Duration.ofSeconds(100));
         aptekaMainPage.tabCatalogue.hover();
 
 

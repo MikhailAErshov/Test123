@@ -22,7 +22,7 @@ public class MainTest extends WebTest {
         aptekaMainPage.tabCatalogue.click();
         aptekaMainPage.tabCatalogue.sendKeys("Таблетки");
         sleep(5000);
-        aptekaMainPage.tabCatalogue.click();
+        aptekaMainPage.tabCatalogue.pressEnter();
 
 
 

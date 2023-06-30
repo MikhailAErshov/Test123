@@ -13,7 +13,7 @@ public class MainTest extends WebTest {
     AptekaMainPage aptekaMainPage = new AptekaMainPage();
     @Test
     public void testLogin() {
-        open("https://apteka-april.ru/");
+        open("https://apteka-april.ru");
 //        Selenide.webdriver().driver().getWebDriver().manage().addCookie(new Cookie("current_region", "103006"));
 //        refresh();
 
